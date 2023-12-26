@@ -1,0 +1,12 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "lib:tcm"
+    - path: "./tests/doctests.hs"
+      component: "tcm:doctests"
+    - path: "./tests"
+      component: "tcm:test-library"
+    - path: "./bin/Clashi.hs"
+      component: "tcm:exe:clashi"
+    - path: "./bin/Clash.hs"
+      component: "tcm:exe:clash"

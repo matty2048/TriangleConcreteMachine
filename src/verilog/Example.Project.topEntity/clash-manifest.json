@@ -1,0 +1,94 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "topEntity_shim.cpp",
+            "sha256": "460702d8afc7479b65dad3acb826f56baf7e34f11fea519fb6f597a0c8340150"
+        },
+        {
+            "name": "topEntity.sdc",
+            "sha256": "6aea3a4618b72bc1325d630afabe745fb8898a39d112f5e63d0228f035f16a95"
+        },
+        {
+            "name": "topEntity.v",
+            "sha256": "e0057c859402029e48275d0322a27020b23a84c301ff4630ad88db70f66163ae"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "ff1b4567b4f66251821b004541a7cabdbc071f56a085e50a255624f903414e91",
+    "top_component": {
+        "name": "topEntity",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "is_clock": true,
+                "name": "i",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "is_clock": false,
+                "name": "rst",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "is_clock": false,
+                "name": "en",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "eta",
+                "type_name": "[10:0]",
+                "width": 11
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "result",
+                "type_name": "[11:0]",
+                "width": 12
+            }
+        ]
+    },
+    "version": "unstable"
+}
